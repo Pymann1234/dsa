@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+// Core concepts
+/*
+
+*/
+
 // 1. Initializing Arrays
 // Stored on stack
 // int arr[5];
