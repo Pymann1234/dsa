@@ -26,7 +26,30 @@ struct ListNode {
 };
 */
 
-// 4.2.1 Common Linked List Operations
+/* --> 4.2.1 Common Linked List Operations
+1. Initializing a Linked List
+* Building alinkedlist involves two steps:
+* first, initializing each nodeobject;
+* second, constructing the reference relationships between nodes.
+Once initialization is complete,
+we can traverse all nodes starting from the head node of the linked list through the reference 'next'
+*/
 
+int main(){
 
+    // Initialize Linked List:  1 -> 3 -> 2 -> 5 -> 4
+    // Initialize each node
+    ListNode* n0 = new ListNode(1);
+    ListNode* n1 = new ListNode(3);
+    ListNode* n2 = new ListNode(2);
+    ListNode* n3 = new ListNode(5);
+    ListNode* n4 = new ListNode(4);
+    // Build references between nodes
+    n0 -> next = n1;
+    n1 -> next = n2;
+    n2 -> next = n3;
+    n3 -> next = n4;
+
+    return 0;
+}
 
